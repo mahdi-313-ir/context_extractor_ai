@@ -66,7 +66,7 @@ class GeminiService extends GetxService {
     if (_apiKeys.isEmpty) throw Exception("هیچ کلید API برای جمنای یافت نشد.");
     final currentKey = _apiKeys[_currentKeyIndex];
     return GenerativeModel(
-      model: 'gemini-1.5-flash', // مدل به‌روز شده برای کارایی بهتر
+      model: 'gemini-2.0-flash', // مدل به‌روز شده برای کارایی بهتر
       apiKey: currentKey,
       generationConfig: GenerationConfig(
         responseMimeType: "application/json",
@@ -79,7 +79,7 @@ class GeminiService extends GetxService {
     if (_apiKeys.isEmpty) throw Exception("هیچ کلید API برای جمنای یافت نشد.");
     final currentKey = _apiKeys[_currentKeyIndex];
     return GenerativeModel(
-      model: 'gemini-1.5-flash', // مدل به‌روز شده
+      model: 'gemini-2.0-flash', // مدل به‌روز شده
       apiKey: currentKey,
       generationConfig: GenerationConfig(
         responseMimeType: "text/plain",
